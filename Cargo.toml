@@ -1,0 +1,40 @@
+[package]
+name = "crate-test"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+keywords = [
+    "embed",
+    "cortex-m"
+]
+categories = [
+    "no-std"
+]
+
+[dependencies.cortex-m]
+version = "0.7.7"
+
+[dependencies.cortex-m-rt]
+version = "0.7.3"
+
+[dependencies.stm32f1]
+version = "0.15.1"
+
+[features]
+stm32f100 = [
+    "stm32f1/stm32f100"
+]
+stm32f101 = [
+    "stm32f1/stm32f101",
+]
+stm32f103 = [
+    "stm32f1/stm32f103"
+]
+stm32f105 = [
+    "stm32f1/stm32f107",
+]
+stm32f107 = [
+    "stm32f1/stm32f107",
+]
+
+
